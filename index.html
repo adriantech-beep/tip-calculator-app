@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="frontendmentor.io" content="adrian.dev" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <header>
+    <img src="images/logo.svg" alt="">
+    </header>
+    <main>
+      <div class="container">
+      <div class="app">
+        <section class="section-one">
+          <div class="bill-box">
+            <p class="bill">Bill</p>
+              <input class="bill-input" type="text">
+          </div>
+          <div class="tip-selection">
+            <p class="select">Select Tip %</p>
+            <div class="tip-buttons">
+              <button class="btn-five-percent">5%</button>
+              <button class="btn-ten-percent">10%</button>
+              <button class="btn-fifteen-percent">15%</button>
+              <button class="btn-twentyfive-percent">25%</button>
+              <button class="btn-fifty-percent">50%</button>
+              <input class="custom-percent" type="text" placeholder="Custom">
+            </div>
+          </div>
+          <div class="tip-count-box">
+            <div class="tip-title">
+              <p>Number of people</p>
+              <p class="zero hidden">Can't be zero</p>
+            </div>
+            <input class="input-people-count" type="text">
+          </div>
+        </section>
+        <section class="section-two">
+          <div class="tip-amount">
+            <p>Tip Amount<br><span>/ person</span></p>
+            <p class="tip-price">$0.00</p>
+          </div>
+          <div class="tip-amount">
+            <p>Total<br><span>/ person</span></p>
+            <p class="tip-total">$0.00</p>
+          </div>
+          <div class="reset-box">
+            <button class="reset-btn">RESET</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="scipt.js"></script>
+  </body>
+</html>

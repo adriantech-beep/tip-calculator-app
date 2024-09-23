@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100dvw;
+  box-sizing: border-box;
+  background-color: #c5e4e7;
+}
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+.app {
+  border-radius: 25px;
+  width: 100vw;
+  max-width: 58.75em;
+  height: 30.0625em;
+  gap: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+
+.section-one {
+  width: 100%;
+  max-width: 379px;
+  height: 388px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bill-box {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+}
+.bill {
+  font-size: 1rem;
+  color: #5e7a7d;
+}
+.bill-input {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  background-color: #f3f9fa;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.3em;
+  padding: 0.2em;
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+.bill-input::placeholder {
+  text-align: left;
+}
+.bill-input:focus {
+  outline: 3px solid #26c2ae;
+}
+
+.group-one p {
+  color: #5e7a7d;
+  width: 100%;
+}
+.tip-selection {
+  width: 100%;
+  max-width: 379px;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.select {
+  font-size: 1rem;
+  color: #5e7a7d;
+  font-weight: 700;
+}
+.tip-buttons {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 379px;
+  height: 112px;
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.tip-buttons button {
+  max-width: 117px;
+  height: 48px;
+  gap: 1em;
+  background-color: #00474b;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.tip-buttons button:active {
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+  transition: transform 1s ease;
+}
+.tip-buttons button:hover {
+  background-color: #26c2ae;
+}
+.tip-buttons input {
+  width: 100%;
+  max-width: 118px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  color: #547878;
+  border: none;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tip-buttons input::placeholder {
+  text-align: center;
+  width: 100%;
+}
+.tip-buttons input:focus {
+  outline: 3px solid #26c2ae;
+  border-radius: 5px;
+}
+.tip-count-box {
+  width: 100%;
+  height: 78px;
+}
+.tip-count-box p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+.tip-title {
+  display: flex;
+  justify-content: space-between;
+}
+.tip-title .zero {
+  color: #e17457;
+}
+.hidden {
+  display: none;
+}
+.input-people-count {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  background-color: #f3f9fa;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.3em;
+  padding: 0.2em;
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+.input-people-count:focus {
+  outline: 3px solid #26c2ae;
+}
+
+.section-two {
+  width: 100%;
+  max-width: 413px;
+  height: 417px;
+  background-color: #00474b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin-right: 0;
+}
+.tip-amount {
+  width: 80%;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.tip-amount p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.tip-amount span {
+  color: #7f9d9f;
+  font-size: 13px;
+}
+.tip-amount .tip-price {
+  font-size: 48px;
+  color: #26c2ae;
+}
+.tip-amount .tip-total {
+  font-size: 48px;
+  color: #26c2ae;
+}
+.reset-box {
+  width: 80%;
+  margin-top: 8em;
+}
+.reset-box button {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0d686d;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00474b;
+  cursor: pointer;
+}
+.reset-box button:hover {
+  background-color: #26c2ae;
+  transition: transform 1s ease;
+}
+.reset-box button:active {
+  transform: scale(1.02);
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  .app {
+    border-radius: 0em;
+    max-width: 375px;
+    height: 718px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0em;
+  }
+  .bill-box {
+    width: 95%;
+    margin-right: 0.5em;
+  }
+  .section-one {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-people-count {
+    width: 95%;
+  }
+  .tip-buttons {
+    margin-top: 0em;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  .tip-title {
+    margin-top: 1em;
+  }
+  .tip-buttons button {
+    width: 100%;
+    max-width: 146.63px;
+  }
+  .section-two {
+    width: 100%;
+    max-width: 357px;
+    height: 257px;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+  .reset-box {
+    width: 80%;
+    margin-top: 0.5em;
+  }
+  .tip-amount {
+    width: 80%;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .tip-amount .tip-price {
+    font-size: 2rem;
+    margin-top: 0em;
+    padding: 0;
+  }
+  .tip-amount .tip-total {
+    font-size: 2rem;
+    margin-top: 0em;
+  }
+}
