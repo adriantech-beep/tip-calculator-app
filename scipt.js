@@ -33,6 +33,7 @@ const initialInput = function (perCent) {
     let zeroAmount = people;
     return zeroAmount;
   } else {
+    displayZero.classList.add("hidden");
     let tip = (bill * perCent) / people;
     return tip;
   }
