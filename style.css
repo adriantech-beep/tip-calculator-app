@@ -48,7 +48,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-.bill {
+.bill-box label {
   font-size: 1rem;
   color: #5e7a7d;
 }

@@ -82,4 +82,6 @@ resetBtn.addEventListener("click", function () {
   document.querySelector(".tip-price").textContent = `$0.00`;
   totalAll = 0;
   document.querySelector(".tip-total").textContent = `$${totalAll.toFixed(2)}`;
+  peopleInput.value = "";
+  billInput.value = "";
 });

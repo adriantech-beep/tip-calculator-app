@@ -14,15 +14,15 @@
   </head>
   <body>
     <header>
-    <img src="images/logo.svg" alt="">
+    <img src="images/logo.svg" alt="a logo image">
     </header>
     <main>
       <div class="container">
       <div class="app">
         <section class="section-one">
           <div class="bill-box">
-            <p class="bill">Bill</p>
-              <input class="bill-input" type="text">
+            <label for="bill">Bill</label>
+              <input class="bill-input" type="text" id="bill">
           </div>
           <div class="tip-selection">
             <p class="select">Select Tip %</p>
@@ -32,7 +32,8 @@
               <button class="btn-fifteen-percent">15%</button>
               <button class="btn-twentyfive-percent">25%</button>
               <button class="btn-fifty-percent">50%</button>
-              <input class="custom-percent" type="text" placeholder="Custom">
+              <label for="custom-percent"></label>
+              <input class="custom-percent" type="text" placeholder="Custom" id="custom-percent">
             </div>
           </div>
           <div class="tip-count-box">
@@ -40,7 +41,8 @@
               <p>Number of people</p>
               <p class="zero hidden">Can't be zero</p>
             </div>
-            <input class="input-people-count" type="text">
+            <label for="people"></label>
+            <input class="input-people-count" type="text" id="people">
           </div>
         </section>
         <section class="section-two">
